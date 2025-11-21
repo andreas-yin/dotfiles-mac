@@ -1,0 +1,30 @@
+# binary space partition
+yabai -m config layout bsp
+
+# New window spawns to the right if vertical split, or bottom if horizontal split
+yabai -m config window_placement second_child
+
+# padding
+yabai -m config top_padding    12
+yabai -m config bottom_padding 12
+yabai -m config left_padding   12
+yabai -m config right_padding  12
+yabai -m config window_gap     12
+
+# mouse settings
+
+yabai -m config mouse_follows_focus on
+
+# set mouse interaction modifier key
+# keep this key pressed while doing a left-click/right-click drag
+# The alt key is the option key on Mac
+yabai -m config mouse_modifier alt
+
+# press modifier key + left-click drag to move window (default: move)
+yabai -m config mouse_action1 move
+
+# press modifier key + right-click drag to resize window (default: resize)
+yabai -m config mouse_action2 resize
+
+# when you drag a window to the center of another window, they get swapped
+yabai -m config mouse_drop_action swap
